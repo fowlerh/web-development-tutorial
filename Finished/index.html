@@ -2,8 +2,42 @@
 <html>
   <head>
     <title>Hellwege Farms</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>Welcome to Hellwege Farms</h1>
+    <section id="main_section">
+      <span id="main_header">Welcome to Hellwege Farms</span>
+    </section>
+    <section id="produce_section">
+      <h2 id="produce_header">Produce</h2>
+      <div id="produce_text">
+        We grow a large variety of fruits and vegetables at
+        <span class="bold_text">Hellwege Farms</span>.
+      </div>
+      <ul id="produce_list">
+        <li>Carrots</li>
+        <li>Cucumbers</li>
+        <li>Green Beans</li>
+        <li>Tomatoes</li>
+        <li>Watermelon</li>
+      </ul>
+    </section>
+    <section id="chicken_section">
+      <h2 id="chickens_header">Chickens</h2>
+      <div id="chickens_text">
+        We have over 20 chickens providing fresh eggs daily.
+      </div>
+      <div id="chicken_image_container">
+        <button onclick="previousChicken()">Previous</button>
+        <img
+          id="chicken_image"
+          src="images/chickens-1.jpg"
+          alt="Chickens"
+          title="Chickens"
+        />
+        <button onclick="nextChicken()">Next</button>
+      </div>
+    </section>
   </body>
 </html>
